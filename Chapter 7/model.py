@@ -44,12 +44,12 @@ class HybridModel(pl.LightningModule):
         return self.cnn_linear(features)
 
     def configure_optimizers(self):
-        parameters = list(self.lstm_embdng_lyr.parameters()) + \
-                     list(self.lstm_lyr.parameters()) + \
-                     list(self.lstm_linear.parameters()) + \
-                     list(self.cnn_linear.parameters()) + \
-                     list(self.cnn_batch_norm.parameters())
-        optimizer = torch.optim.Adam(parameters, lr=0.0003)
+        params = list(self.lstm_embdng_lyr.parameters()) + \
+                 list(self.lstm_lyr.parameters()) + \
+                 list(self.lstm_linear.parameters()) + \
+                 list(self.cnn_linear.parameters()) + \
+                 list(self.cnn_batch_norm.parameters())
+        optimizer = torch.optim.Adam(params, lr=0.0003)
         return optimizer
 
     def training_step(self, batch, batch_idx):
