@@ -8,7 +8,7 @@ import pytorch_lightning as pl
 class HybridModel(pl.LightningModule):
     def __init__(self, cnn_embdng_sz, lstm_embdng_sz, lstm_hidden_lyr_sz, lstm_vocab_sz, lstm_num_lyrs, max_seq_len=20):
         super(HybridModel, self).__init__()
-        """CNN"""
+
         resnet = models.resnet152(pretrained=False)
         module_list = list(resnet.children())[:-1]
         self.cnn_resnet = nn.Sequential(*module_list)
@@ -16,7 +16,7 @@ class HybridModel(pl.LightningModule):
                                     cnn_embdng_sz)
         self.cnn_batch_norm = nn.BatchNorm1d(cnn_embdng_sz,
                                              momentum=0.01)
-        """LSTM"""
+
         self.lstm_embdng_lyr = nn.Embedding(lstm_vocab_sz,
                                             lstm_embdng_sz)
         self.lstm_lyr = nn.LSTM(lstm_embdng_sz, lstm_hidden_lyr_sz,
@@ -27,9 +27,8 @@ class HybridModel(pl.LightningModule):
         self.save_hyperparameters()
 
     def forward(self, input_images, caps, lens):
-        """CNN"""
         cnn_features = self.cnn_batch_norm(self.forward_cnn_no_batch_norm(input_images))
-        """LSTM"""
+
         embeddings = self.lstm_embdng_lyr(caps)
         embeddings = torch.cat((cnn_features.unsqueeze(1), embeddings), 1)
         lstm_input = pk_pdd_seq(embeddings, lens, batch_first=True)
@@ -62,9 +61,8 @@ class HybridModel(pl.LightningModule):
         return loss
 
     def get_caption(self, img, lstm_sts=None):
-        """CNN"""
         features = self.forward_cnn_no_batch_norm(img)
-        """LSTM: Generate captions using greedy search."""
+
         token_ints = []
         inputs = features.unsqueeze(1)
         for i in range(self.max_seq_len):
