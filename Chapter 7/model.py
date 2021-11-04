@@ -19,8 +19,10 @@ class HybridModel(pl.LightningModule):
 
         self.lstm_embdng_lyr = nn.Embedding(lstm_vocab_sz,
                                             lstm_embdng_sz)
-        self.lstm_lyr = nn.LSTM(lstm_embdng_sz, lstm_hidden_lyr_sz,
-                                lstm_num_lyrs, batch_first=True)
+        self.lstm_lyr = nn.LSTM(lstm_embdng_sz,
+                                lstm_hidden_lyr_sz,
+                                lstm_num_lyrs,
+                                batch_first=True)
         self.lstm_linear = nn.Linear(lstm_hidden_lyr_sz,
                                      lstm_vocab_sz)
         self.max_seq_len = max_seq_len
