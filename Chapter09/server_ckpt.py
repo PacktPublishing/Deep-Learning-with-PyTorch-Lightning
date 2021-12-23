@@ -1,3 +1,12 @@
+# Important Note:
+#
+# For your convenience, we have copied the notebook named
+# "Cats and Dogs Classifier.ipynb" from Chapter 2 to the
+# GitHub folder for this chapter (only change in the notebook
+# is that ImageClassifier class is now defined in its own
+# file named "image_classifier.py", so we have removed that cell).
+# Run that notebook before launching this server program.
+
 import torch.nn.functional as functional
 import torchvision.transforms as transforms
 
