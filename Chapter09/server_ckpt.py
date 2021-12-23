@@ -5,9 +5,9 @@ from PIL import Image
 
 from flask import Flask, request, jsonify
 
-import image_classifier as ic
+from image_classifier import ImageClassifier
 
-model = ic.ImageClassifier.load_from_checkpoint("./lightning_logs/version_0/checkpoints/epoch=99-step=3199.ckpt")
+model = ImageClassifier.load_from_checkpoint("./lightning_logs/version_0/checkpoints/epoch=99-step=3199.ckpt")
 
 IMAGE_SIZE = 64
 def transform_image(img):
