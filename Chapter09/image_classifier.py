@@ -1,4 +1,5 @@
-import torch.nn as nn
+import torch
+from torch import nn, optim
 
 import pytorch_lightning as pl
 
