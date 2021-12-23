@@ -1,8 +1,8 @@
 # Important Note:
 #
 # For your convenience, we have copied the notebook named "Cats and Dogs Classifier.ipynb" from Chapter 2 to the
-# GitHub folder for this chapter (only change in the notebook is that ImageClassifier class is now defined in its own
-# file named "image_classifier.py", so we have removed that cell and added an import statement instead).
+# GitHub folder for this chapter. Only change in the notebook is that the ImageClassifier class is now defined in its own
+# file named "image_classifier.py"; so we have removed that cell and added an import statement instead.
 #
 # Run the "Cats and Dogs Classifier.ipynb" notebook in this folder before launching this server program.
 
