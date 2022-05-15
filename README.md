@@ -7,11 +7,11 @@ This is the code repository for [Deep Learning with PyTorch Lightning](https://w
 **Swiftly build high-performance Artificial Intelligence (AI) models using Python**
 
 ## What is this book about?
-PyTorch Lightning lets researchers build their own deep learning (DL) models without having to worry about the boilerplate. With the help of this book, you'll be able to maximize productivity for DL projects while ensuring full flexibility from model formulation through to implementation. You'll take a hands-on approach to implementing PyTorch Lightning models to get up to speed in no time.
+PyTorch Lightning lets researchers build their own Deep Learning (DL) models without having to worry about the boilerplate. With the help of this book, you'll be able to maximize productivity for DL projects while ensuring full flexibility from model formulation through to implementation. You'll take a hands-on approach to implementing PyTorch Lightning models to get up to speed in no time.
 
 This book covers the following exciting features: 
 * Customize models that are built for different datasets, model architectures, and optimizers
-* Understand how a variety of deep learning models from image recognition and time series to GANs, semi-supervised and self-supervised models can be built
+* Understand how a variety of deep learning models from image recognition and time series to GANs, Semi-supervised and Self-supervised models can be built
 * Use out-of-the-box model architectures and pre-trained models using transfer learning
 * Run and tune DL models in a multi-GPU environment using mixed-mode precisions
 * Explore techniques for model scoring on massive workloads
@@ -23,6 +23,9 @@ alt="https://www.packtpub.com/" border="5" /></a>
 
 
 ## Instructions and Navigations
+
+Most of the code is specific to the aforesaid PyTorch Lightning and Torch versions. Please ensure compatability by installing correct packages as defined in the technical requirements secction of the book. 
+
 All of the code is organized into folders. For example, Chapter02.
 
 The code will look like the following:
@@ -36,7 +39,7 @@ trainer = pl.Trainer(limit_train_batches=10)
 ```
 
 **Following is what you need for this book:**
-This deep learning book is for citizen data scientists and expert data scientists transitioning from other frameworks to PyTorch Lightning. This book will also be useful for deep learning researchers who are just getting started with coding for deep learning models using PyTorch Lightning. Working knowledge of Python programming and an intermediate-level understanding of statistics and deep learning fundamentals is expected.
+This Deep Learning book is for citizen data scientists and expert data scientists transitioning from other frameworks to PyTorch Lightning. This book will also be useful for deep learning researchers who are just getting started with coding for deep learning models using PyTorch Lightning. Working knowledge of Python programming and an intermediate-level understanding of statistics and deep learning fundamentals is expected.
 
 With the following software and hardware list you can run all code files present in the book (Chapter 1-10).
 
