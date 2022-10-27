@@ -64,3 +64,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 **Kunal Sawarkar**
 is a Chief Data Scientist and AI thought leader. He leads the worldwide partner ecosystem in building innovative AI products. He also serves as an Advisory Board Member and an Angel Investor. He holds a master’s degree from Harvard University with major coursework in applied statistics. He has been applying machine learning to solve previously unsolved problems in industry and society, with a special focus on Deep Learning. Kunal has led various AI product R&D labs and has 20+ patents and papers published in this field. When not diving into data, he enjoys doing rock climbing and learning to fly aircraft while continuing his insatiable curiosity for astronomy and wildlife.
 
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781800561618">https://packt.link/free-ebook/9781800561618 </a> </p>
